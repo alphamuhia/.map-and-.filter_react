@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import Students from "./components/Students";
 
 function App() {
+  // let fruits_list = ["mangoes", "bananas", "oranges", "berries", "peach"];
+  // let name_list = [
+  //   {
+  //     id: 1,
+  //     student_name: "eva",
+  //     student: true,
+  //   },
+  //   {
+  //     id: 1,
+  //     student_name: "dan",
+  //     student: true,
+  //   },
+  //   {
+  //     id: 1,
+  //     student_name: "cain",
+  //     student: true,
+  //   },
+  //   {
+  //     id: 1,
+  //     student_name: "alpha",
+  //     student: false,
+  //   },
+  // ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Students />
+      {/* <h1 className="text-4xl">list</h1>
+      <ul>
+        {fruits_list.map((fruit, index) => (
+          <li key={index}>{fruit}</li>
+        ))}
+      </ul>
+      <h1 className="text-4xl">Names</h1>
+      <ul>
+        {name_list.map((name) => (
+          <li key={name.id}>
+            {name.student_name} - {name.student ? "true" : "false"}
+          </li>
+        ))}
+      </ul> */}
     </div>
   );
 }

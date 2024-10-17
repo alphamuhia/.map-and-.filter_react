@@ -49,7 +49,16 @@ function Students() {
         ))}
       </ul>
       <h1 className="text-3xl">students who have completed the course</h1>
-      <ul>{students_list.filter}</ul>
+      <ul>
+        {students_list
+          .filter((students) => students.course_name)
+          .map((students) => (
+            <li key={students.id}>
+              {students.student_name} - {students.course_name} -{"complition"} -
+              {students.completed}
+            </li>
+          ))}
+      </ul>
     </div>
   );
 }
